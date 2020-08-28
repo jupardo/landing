@@ -12,7 +12,8 @@ const App = () => {
     <main>
       <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
         <Link className="navbar-brand cursor-pointer" to="banner" offset={-56} smooth={true}>jupardo</Link>
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav mr-auto"></ul>
+        <ul className="navbar-nav">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
