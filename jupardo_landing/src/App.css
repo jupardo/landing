@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+body {
+    background: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blockquote-footer {
+    color: #FFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    background-color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nombre {
+    color: #29a19c;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.subtitle {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.5rem
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+    height: calc(100vh - 56px);
+    color: #fff;
+    background: url("./audifonosmascara2.jpg");
+    background-position: top right;
+}
+
+.header .cover {
+    max-width: 30vh;
+    max-height: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.header .row {
+    height: 80%;
+}
+
+.header .bottom-text {
+    height: 20%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blockquote {
+    width: 100%;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.social>li>a {
+    color: #fff;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.intro {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    max-width: 768px;
+    font-style: italic;
+    text-align: center;
+    margin: 1.5rem auto 1.5rem auto;
+    background: rgba(201, 205, 214, 0.25);
+}
+
+@media only screen and (min-width:769px) {
+    .header .bottom-text .blockquote {
+        font-size: 1.75rem;
+    }
+    .header {
+        min-height: 420px;
+    }
+}
+
+@media only screen and (max-width:768px) and (min-width: 576px) {
+    .header .bottom-text.blockquote {
+        font-size: 1.5rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .col-12 {
+        justify-content: center;
+        align-items: center;
+    }
+    .blockquote {
+        margin: 0px;
+    }
+    .profile-photo {
+        height: 70%;
+        display: flex;
+    }
+    .personal-info {
+        background: rgba(0, 0, 0, 0.2)
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .profile-photo {
+        height: 50%
+    }
+    .blockquote {
+        font-size: 0.75rem;
+    }
+    .arrow {
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px 3px;
+    }
+    .personal-info h5 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .blockquote {
+        display: none!important;
+    }
+}
+
+.header .bottom-text .blockquote {
+    font-style: Italic;
+}
+
+.section-personal-info {
+    background: url('./texture-2068283_1920.jpg');
+    background-position: top right;
+}
+
+.tiles {
+    margin: 0px;
+}
+
+.tiles div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.tiles p {
+    text-align: center;
+    color: black;
+}
+
+.tiles a:hover {
+    text-decoration: none;
+}
+
+.tiles img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 190px;
+}
+
+.tiles h4 {
+    vertical-align: middle;
+}
+
+.tiles div {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer {
+    height: 56px;
+    color: #FFF;
+    padding: 16px;
+}
+
+.footer .nav-link {
+    padding: 1px 5px;
+}
+
+.black {
+    fill: black;
+    filter: brightness(0)
+}
+
+.noheight {
+    height: 0px;
+}
+
+.self-center {
+    align-self: center;
 }
