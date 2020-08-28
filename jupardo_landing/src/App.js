@@ -12,20 +12,25 @@ const App = () => {
     <main>
       <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
         <Link className="navbar-brand cursor-pointer" to="banner" offset={-56} smooth={true}>jupardo</Link>
-        <ul className="navbar-nav mr-auto"></ul>
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link className="nav-link active cursor-pointer" offset={-56} smooth={true} to="banner">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link active cursor-pointer" offset={-56} smooth={true} to="skills">Skills</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link active cursor-pointer" offset={-56} smooth={true} to="projects">Projects</Link>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active" target="blank" href="https://jupardo.com/blog">Blog</a>
-          </li>
+        <ul className="navbar-nav mr-auto">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          
+            <li className="nav-item">
+              <Link className="nav-link active cursor-pointer" offset={-56} smooth={true} to="banner">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active cursor-pointer" offset={-56} smooth={true} to="skills">Skills</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active cursor-pointer" offset={-56} smooth={true} to="projects">Projects</Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" target="blank" href="https://jupardo.com/blog">Blog</a>
+            </li>
+          </div>
         </ul>
       </nav>
         <section id="banner" className="header p-3">
